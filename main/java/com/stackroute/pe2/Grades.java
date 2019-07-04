@@ -1,12 +1,11 @@
 package com.stackroute.pe2;
 
-import java.util.Scanner;
 
 public class Grades {
     static int sum=0,i=0;
     static double avg;
 
-    public static double avarage(int number[]) {
+    public double avarage(int number[]) {
         if (number.length - 1 < 1) {
             return 0;
         } else {
@@ -21,9 +20,7 @@ public class Grades {
     }
 
 
-
-
-    public static int max(int number[]) {
+    public int max(int number[]) {
         int max = number[0];
         if (number.length - 1 < 1) {
             return 0;
@@ -37,7 +34,7 @@ public class Grades {
         }
     }
 
-    public static int min(int number[]) {
+    public int min(int number[]) {
         int min = number[0];
         if (number.length - 1 < 1) {
             return 0;

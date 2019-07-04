@@ -23,16 +23,16 @@ public class MemberTest {
     }
     @Test
     public void testForSetMember(){
-        Member m1=memberVariable.setMember("harika",22,52);
-        assertEquals(m1.name,"harika");
+        Member m1=memberVariable.setMember("sindhu",22,52);
+        assertEquals(m1.name,"sindhu");
         assertEquals(m1.salary,22,0);
         assertEquals(m1.age,52);
 
     }
     @Test
     public void testForSetMemberDoubleValue(){
-        Member m1=memberVariable.setMember("harika",22.60,52);
-        assertEquals(m1.name,"harika");
+        Member m1=memberVariable.setMember("sindhu",22.60,52);
+        assertEquals(m1.name,"sindhu");
         assertEquals(m1.salary,22,60);
         assertEquals(m1.age,52);
 

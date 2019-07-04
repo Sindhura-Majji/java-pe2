@@ -8,18 +8,23 @@ public class Palindrome {
         String temp = string;
         String reverse = "";
         int length = string.length();
-        for (int i = length - 1 ; i >= 0 ; i--)
+
+        if ( string == " ")
         {
-            reverse = reverse + string.charAt(i);
-
+            result = "given string is empty";
         }
+        else if (string.length()>1) {
+            for (int i = length - 1; i >= 0; i--)
+            {
+                reverse = reverse + string.charAt(i);
+            }
 
-        if (reverse.contentEquals(temp)) {
+            if (reverse.contentEquals(temp)) {
 
-            result = "It is a palindrome";
-        }
-        else {
-            result = "Not a palindrome";
+                result = "It is a palindrome";
+            } else {
+                result = "Not a palindrome";
+            }
         }
         return result;
     }

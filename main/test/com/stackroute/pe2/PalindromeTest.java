@@ -50,5 +50,13 @@ public class PalindromeTest {
         //Assert
         assertEquals("Not a palindrome", result5);
     }
+    @Test
+    public void givenStringContainsNegativePalindromeShouldReturnErrorMessage() {
+        //Arrange
+        //Act
+        String result6 = palindrome.checkPalindrome(" ");
+        //Assert
+        assertEquals("given string is empty", result6);
+    }
 
 }

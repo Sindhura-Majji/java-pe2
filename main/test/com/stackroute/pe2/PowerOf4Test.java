@@ -45,4 +45,13 @@ public class PowerOf4Test {
         assertEquals("Number is zero", result);
 
     }
+    @Test
+    public void givenStringContainsNegativeNumberShouldReturnErrorMessage() {
+        //Arrange
+        //Act
+        String result = powerOf4.isPowerOfFour(-5);
+        //Assert
+        assertEquals("Negative number not accepted", result);
+
+    }
 }
